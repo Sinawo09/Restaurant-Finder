@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Gold Restaurant",
+    "category": "African Food",
+    "address": "15 Bennett Street, De Waterkant, Cape Town, 8005",
+    "city": "Cape Town",
+    "latitude": -33.9129706,
+    "longitude": 18.4191982,
+    "description": "African-inspired dining and live cultural performances in a lively setting.",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-33.9129706%2C18.4191982"
+  },
+  {
+    "id": 2,
+    "name": "The Pot Luck Club",
+    "category": "African Food",
+    "address": "373-375 Albert Road, Woodstock, Cape Town, 7915",
+    "city": "Cape Town",
+    "latitude": -33.9273056,
+    "longitude": 18.4573803,
+    "description": "A Cape Town favourite serving creative small plates with local flavours.",
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-33.9273056%2C18.4573803"
+  },
+  {
+    "id": 3,
+    "name": "Ocean Basket",
+    "category": "Seafood",
+    "address": "Main Road, Cape Town, 8005",
+    "city": "Cape Town",
+    "latitude": -33.9179677,
+    "longitude": 18.3880437,
+    "description": "A South African seafood restaurant serving fish, prawns, and sharing platters.",
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-33.9179677%2C18.3880437"
+  },
+  {
+    "id": 4,
+    "name": "Col'Cacchio",
+    "category": "Pizza",
+    "address": "Shop 20, Belvedere Road, Wyndover, Claremont, Cape Town, 7708",
+    "city": "Cape Town",
+    "latitude": -33.9783611,
+    "longitude": 18.4823631,
+    "description": "An Italian-inspired pizzeria known for freshly made pizzas and pastas.",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-33.9783611%2C18.4823631"
+  },
+  {
+    "id": 5,
+    "name": "Marble",
+    "category": "Steakhouse",
+    "address": "Jellicoe Avenue, Parktown North, Johannesburg, 2006",
+    "city": "Johannesburg",
+    "latitude": -26.1435364,
+    "longitude": 28.036133,
+    "description": "A Johannesburg grill restaurant focused on open-fire cooking and prime cuts.",
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-26.1435364%2C28.036133"
+  },
+  {
+    "id": 6,
+    "name": "The Grillhouse Melrose Arch",
+    "category": "Steakhouse",
+    "address": "38 Whiteley Road, Melrose Arch, Johannesburg, 2076",
+    "city": "Johannesburg",
+    "latitude": -26.1316774,
+    "longitude": 28.0682692,
+    "description": "A classic steakhouse serving grilled cuts and familiar sides.",
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-26.1316774%2C28.0682692"
+  },
+  {
+    "id": 7,
+    "name": "Cargo Hold",
+    "category": "Seafood",
+    "address": "Durban Promenade, Point, Durban, 4069",
+    "city": "Durban",
+    "latitude": -29.8673373,
+    "longitude": 31.0463187,
+    "description": "A seafood restaurant beside the water at Durban's uShaka Marine World.",
+    "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-29.8673373%2C31.0463187"
+  },
+  {
+    "id": 8,
+    "name": "Kauai",
+    "category": "Healthy Food",
+    "address": "Florida Road, Durban, 4025",
+    "city": "Durban",
+    "latitude": -29.8318709,
+    "longitude": 31.0157713,
+    "description": "A quick-service spot for smoothies, salads, and fresh bowls.",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-29.8318709%2C31.0157713"
+  },
+  {
+    "id": 9,
+    "name": "Ginger",
+    "category": "Seafood",
+    "address": "Marine Drive, Summerstrand, Gqeberha, 6001",
+    "city": "Gqeberha",
+    "latitude": -33.9819393,
+    "longitude": 25.6587583,
+    "description": "A relaxed restaurant at the beachfront Beach Hotel in Summerstrand.",
+    "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-33.9819393%2C25.6587583"
+  },
+  {
+    "id": 10,
+    "name": "Something Good Roadhouse",
+    "category": "Fast Food",
+    "address": "Marine Drive, Summerstrand, Gqeberha, 6001",
+    "city": "Gqeberha",
+    "latitude": -33.9847125,
+    "longitude": 25.6706159,
+    "description": "A long-running beachfront roadhouse known for burgers and casual meals.",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=-33.9847125%2C25.6706159"
+  }
+]

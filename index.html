@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f1">
+  <meta name="description" content="Find a good place to eat by food type and location.">
+  <title>Restaurant Finder | Find Your Next Meal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Restaurant Finder home"><span class="brand-mark" aria-hidden="true">R</span>Restaurant Finder</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A good meal is closer than you think</p>
+        <h1>Find Your<br>Next Meal<span class="heading-period">.</span></h1>
+        <p class="hero-intro">Discover restaurants by food type and location.</p>
+        <a class="button button-dark" href="restaurants.html">Explore Restaurants <span aria-hidden="true">&rarr;</span></a>
+        <p class="hero-note"><span aria-hidden="true">&#10022;</span> Find something worth sitting down for.</p>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85" alt="A warmly lit restaurant table set for dinner">
+        <span class="image-caption">Something delicious, somewhere nearby.</span>
+      </div>
+    </section>
+
+    <section class="category-section" aria-labelledby="categories-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">A little inspiration</p><h2 id="categories-title">What are you in the mood for?</h2></div>
+        <a class="text-link" href="restaurants.html">See all restaurants <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="category-list">
+        <a class="category-item" href="restaurants.html?category=Fast%20Food"><span class="category-number">01</span><span>Fast Food</span><span class="category-arrow" aria-hidden="true">&nearr;</span></a>
+        <a class="category-item" href="restaurants.html?category=Pizza"><span class="category-number">02</span><span>Pizza</span><span class="category-arrow" aria-hidden="true">&nearr;</span></a>
+        <a class="category-item" href="restaurants.html?category=Seafood"><span class="category-number">03</span><span>Seafood</span><span class="category-arrow" aria-hidden="true">&nearr;</span></a>
+        <a class="category-item" href="restaurants.html?category=African%20Food"><span class="category-number">04</span><span>African Food</span><span class="category-arrow" aria-hidden="true">&nearr;</span></a>
+        <a class="category-item" href="restaurants.html?category=Healthy%20Food"><span class="category-number">05</span><span>Healthy Food</span><span class="category-arrow" aria-hidden="true">&nearr;</span></a>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-title">
+      <div class="faq-heading"><p class="eyebrow">A few helpful details</p><h2 id="faq-title">Questions, answered.</h2></div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How do I find the right restaurant?</summary>
+          <p>Browse by food category, or search the restaurant directory by name, food type, or city. You can also filter by location.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I have to share my location?</summary>
+          <p>No. Finding restaurants near you is optional. If you allow location access, it is used to sort nearby results and is not saved or shared.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I book a table through Restaurant Finder?</summary>
+          <p>Choose “View Details” and then “Book Now” to search for reservation options. Booking is completed with the restaurant or booking provider.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="home-cta">
+      <p class="eyebrow">Your next favourite place</p>
+      <h2>Good food. New places.<br>One simple search.</h2>
+      <a class="button button-light" href="restaurants.html">Find a restaurant <span aria-hidden="true">&rarr;</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">R</span>Restaurant Finder</a><p>Made for finding your next good meal.</p><span>&copy; <span class="current-year"></span> Restaurant Finder</span></footer>
+</body>
+</html>

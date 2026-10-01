@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f1">
+  <meta name="description" content="Search real restaurants by name, food category, and city.">
+  <title>Restaurants | Restaurant Finder</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="directory-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Restaurant Finder home"><span class="brand-mark" aria-hidden="true">R</span>Restaurant Finder</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="restaurants.html" aria-current="page">Restaurants</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="directory-main">
+    <section class="directory-intro">
+      <p class="eyebrow">The good-food list</p>
+      <h1>Find a Restaurant<span class="heading-period">.</span></h1>
+      <p>Search real restaurants by name, food type, or city.</p>
+    </section>
+
+    <section class="directory-controls" aria-label="Search and filter restaurants">
+      <label class="search-control"><span class="visually-hidden">Search by restaurant, category, or location</span><span class="search-icon" aria-hidden="true"></span><input id="restaurant-search" type="search" placeholder="Search restaurants..." autocomplete="off"></label>
+      <label class="select-control"><span class="visually-hidden">Filter by category</span><select id="category-filter"><option value="">All Categories</option><option>Fast Food</option><option>Pizza</option><option>Seafood</option><option>African Food</option><option>Healthy Food</option><option>Steakhouse</option></select></label>
+      <label class="select-control"><span class="visually-hidden">Filter by location</span><select id="location-filter"><option value="">All Locations</option><option>Cape Town</option><option>Johannesburg</option><option>Durban</option><option>Gqeberha</option></select></label>
+      <label class="favourites-control"><input id="favourites-filter" type="checkbox"><span class="heart-icon" aria-hidden="true">&#9825;</span> My Favourites</label>
+    </section>
+
+    <section class="nearby-tools" aria-label="Find restaurants by distance">
+      <button class="button button-dark" id="find-nearby" type="button">Find Restaurants Near Me</button>
+      <p class="location-status" id="location-status" role="status" aria-live="polite"></p>
+      <button class="text-link browse-all-button" id="browse-all-restaurants" type="button" hidden>Continue browsing all restaurants</button>
+    </section>
+    <p class="map-attribution">Restaurant locations: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>.</p>
+
+    <section class="results-section" aria-labelledby="results-heading">
+      <div class="results-heading-row"><h2 id="results-heading">Restaurants</h2><p id="results-count" class="results-count" aria-live="polite"></p></div>
+      <div id="restaurant-results" class="restaurant-grid" aria-live="polite" aria-busy="true"><p class="status-message">Loading restaurants...</p></div>
+    </section>
+  </main>
+
+  <dialog class="details-dialog" id="restaurant-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Close restaurant details">&times;</button>
+    <img class="dialog-image" id="dialog-image" src="" alt="">
+    <div class="dialog-copy"><p class="eyebrow" id="dialog-meta"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p><p class="dialog-address" id="dialog-address"></p><a class="book-button dialog-booking" id="dialog-booking" href="" target="_blank" rel="noopener noreferrer">Book Now</a></div>
+  </dialog>
+
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">R</span>Restaurant Finder</a><p>Made for finding your next good meal.</p><span>&copy; <span class="current-year"></span> Restaurant Finder</span></footer>
+</body>
+</html>
