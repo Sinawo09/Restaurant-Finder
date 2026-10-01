@@ -138,19 +138,28 @@ h1, h2, p { margin-top: 0; }
 .book-button:hover { transform: translateY(-1px); background: #493258; }
 .dialog-booking { margin: 18px 0 0; }
 
-.directory-page { background: var(--purple); color: var(--white); }
-.directory-page .site-header { border-color: #51445b; }
-.directory-page .brand, .directory-page .site-nav a { color: #f7f2fa; }
-.directory-page .site-nav a:hover, .directory-page .site-nav a[aria-current="page"] { color: #e2c6ec; }
-.directory-page .brand-mark { background: var(--coral); }
-.directory-page .directory-intro .eyebrow { color: #d9bddf; }
-.directory-page .directory-intro > p:last-child, .directory-page .location-status, .directory-page .map-attribution { color: #d1c6d7; }
-.directory-page .directory-controls { border-color: #62536c; background: #eee9f1; }
-.directory-page .favourites-control { color: var(--ink); }
-.directory-page .map-attribution a { color: #ead0f0; }
-.directory-page .results-heading-row h2, .directory-page .results-count { color: #f7f2fa; }
-.directory-page .site-footer { border-color: #51445b; color: #d1c6d7; }
-.directory-page .brand-footer { color: #f7f2fa; }
+.theme-page { background: var(--purple); color: var(--white); }
+.theme-page .site-header { border-color: #51445b; }
+.theme-page .brand, .theme-page .site-nav a { color: #f7f2fa; }
+.theme-page .site-nav a:hover, .theme-page .site-nav a[aria-current="page"] { color: #e2c6ec; }
+.theme-page .brand-mark { background: var(--coral); }
+.theme-page .eyebrow { color: #d9bddf; }
+.theme-page .hero-intro, .theme-page .hero-note, .theme-page .directory-intro > p:last-child, .theme-page .contact-intro > p:last-child, .theme-page .location-status, .theme-page .map-attribution, .theme-page .faq-item p { color: #d1c6d7; }
+.theme-page .directory-controls { border-color: #62536c; background: #eee9f1; }
+.theme-page .favourites-control { color: var(--ink); }
+.theme-page .map-attribution a, .theme-page .text-link { color: #ead0f0; }
+.theme-page .results-heading-row h2, .theme-page .results-count { color: #f7f2fa; }
+.theme-page .site-footer { border-color: #51445b; color: #d1c6d7; }
+.theme-page .brand-footer { color: #f7f2fa; }
+.theme-page .category-section { background: #392d43; }
+.theme-page .category-list, .theme-page .faq-list, .theme-page .faq-item { border-color: #51445b; }
+.theme-page .category-item, .theme-page .faq-item summary { color: #f7f2fa; }
+.theme-page .category-item { border-color: #51445b; }
+.theme-page .category-number { color: #d1c6d7; }
+.theme-page .category-item:hover { color: #e2c6ec; }
+.theme-page .home-cta { border-top: 1px solid #51445b; background: #392d43; }
+.theme-page .home-cta .eyebrow { color: #d7e4d9; }
+.theme-page .form-field label { color: #f7f2fa; }
 
 .details-dialog { position: fixed; width: min(560px, calc(100% - 32px)); max-width: none; max-height: min(90vh, 740px); padding: 0; overflow: auto; border: 0; background: var(--paper); color: var(--ink); box-shadow: 0 18px 70px #1018104d; }
 .details-dialog::backdrop { background: #19241d99; }
@@ -195,6 +204,7 @@ h1, h2, p { margin-top: 0; }
   .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3.25px) rotate(45deg); }
   .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-3.25px) rotate(-45deg); }
   .site-nav { position: absolute; top: calc(100% - 1px); right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 8px 6% 14px; border-bottom: 1px solid var(--line); background: var(--paper); }
+  .theme-page .site-nav { border-color: #51445b; background: #392d43; }
   .site-nav.is-open { display: flex; flex-direction: column; }
   .site-nav a { padding: 11px 0; }
   .site-nav a[aria-current="page"]::after { right: auto; width: 28px; }
@@ -207,6 +217,7 @@ h1, h2, p { margin-top: 0; }
   .section-heading { align-items: start; margin-bottom: 21px; }
   .section-heading h2 { max-width: 280px; font-size: 27px; }
   .section-heading .text-link { align-self: end; font-size: 11px; white-space: nowrap; }
+  .faq-section { grid-template-columns: 1fr; gap: 24px; padding: 48px 6% 54px; }
   .category-list { grid-template-columns: 1fr; }
   .category-item, .category-item + .category-item { min-height: 65px; grid-template-columns: 44px 1fr auto; align-items: center; padding: 10px 5px 10px 0; border-left: 0; }
   .category-number { grid-column: 1; grid-row: 1; }
