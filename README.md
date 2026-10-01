@@ -42,7 +42,7 @@ restaurant-finder/
 
 ## Restaurant data
 
-Edit `data/restaurants.json` to update the directory. Each restaurant record includes an ID, name, category, address, city, coordinates, description, image URL, and map link. Restaurant images are loaded from Unsplash; map and booking links open external services.
+Edit `data/restaurants.json` to update the directory. Each restaurant record includes an ID, name, cuisine, category, address, city, coordinates, description, image URL, and map link. Restaurant images are loaded from Unsplash; map and booking links open external services.
 
 ## Contact form
 

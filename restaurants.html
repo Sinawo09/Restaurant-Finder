@@ -28,8 +28,12 @@
     </section>
 
     <section class="directory-controls" aria-label="Search and filter restaurants">
-      <label class="search-control"><span class="visually-hidden">Search by restaurant, category, or location</span><span class="search-icon" aria-hidden="true"></span><input id="restaurant-search" type="search" placeholder="Search restaurants..." autocomplete="off"></label>
-      <label class="select-control"><span class="visually-hidden">Filter by category</span><select id="category-filter"><option value="">All Categories</option><option>Fast Food</option><option>Pizza</option><option>Seafood</option><option>African Food</option><option>Healthy Food</option><option>Steakhouse</option></select></label>
+      <form class="directory-search" id="restaurant-search-form" role="search">
+        <label class="search-control"><span class="visually-hidden">Search by restaurant, category, or location</span><span class="search-icon" aria-hidden="true"></span><input id="restaurant-search" type="search" placeholder="Search restaurants..." autocomplete="off"></label>
+        <button class="button button-dark directory-search-button" type="submit">Search</button>
+      </form>
+      <label class="select-control"><span class="visually-hidden">Filter by cuisine</span><select id="cuisine-filter"><option value="">All Cuisines</option><option>African</option><option>Italian</option><option>Indian</option><option>Chinese</option><option>Fast Food</option><option>Seafood</option><option>Mexican</option></select></label>
+      <label class="select-control"><span class="visually-hidden">Filter by category</span><select id="category-filter"><option value="">All Categories</option><option>Fast Food</option><option>Pizza</option><option>Seafood</option><option>African Food</option><option>Healthy Food</option><option>Steakhouse</option><option>Indian Food</option><option>Chinese Food</option><option>Mexican Food</option></select></label>
       <label class="select-control"><span class="visually-hidden">Filter by location</span><select id="location-filter"><option value="">All Locations</option><option>Cape Town</option><option>Johannesburg</option><option>Durban</option><option>Gqeberha</option></select></label>
       <label class="favourites-control"><input id="favourites-filter" type="checkbox"><span class="heart-icon" aria-hidden="true">&#9825;</span> My Favourites</label>
     </section>

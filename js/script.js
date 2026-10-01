@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Set up search, filters, saved favourites, and restaurant cards on the directory page.
 async function setupRestaurantDirectory(resultsContainer) {
+  const searchForm = document.querySelector('#restaurant-search-form');
   const searchInput = document.querySelector('#restaurant-search');
+  const cuisineFilter = document.querySelector('#cuisine-filter');
   const categoryFilter = document.querySelector('#category-filter');
   const locationFilter = document.querySelector('#location-filter');
   const favouritesFilter = document.querySelector('#favourites-filter');
@@ -70,8 +72,14 @@ async function setupRestaurantDirectory(resultsContainer) {
     resultsContainer.setAttribute('aria-busy', 'false');
   }
 
-  // Re-render cards whenever one of the controls changes.
+  // Search as the user types, and also support submitting with the Search button.
   searchInput.addEventListener('input', renderRestaurants);
+  searchForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    renderRestaurants();
+  });
+  cuisineFilter.addEventListener('change', renderRestaurants);
+  // Keep the existing category, city, and favourites filters working alongside cuisine.
   categoryFilter.addEventListener('change', renderRestaurants);
   locationFilter.addEventListener('change', renderRestaurants);
   favouritesFilter.addEventListener('change', renderRestaurants);
@@ -113,6 +121,7 @@ async function setupRestaurantDirectory(resultsContainer) {
   // Clear filters as well as distance sorting so all restaurants are visible again.
   browseAllButton.addEventListener('click', () => {
     searchInput.value = '';
+    cuisineFilter.value = '';
     categoryFilter.value = '';
     locationFilter.value = '';
     favouritesFilter.checked = false;
@@ -160,9 +169,10 @@ async function setupRestaurantDirectory(resultsContainer) {
     closeDialogButton.addEventListener('click', () => detailsDialog.close());
   }
 
-  // Match all active filters together, then build cards using safe DOM text nodes.
+  // Read the controls and combine their matches, so search and cuisine narrow the same list.
   function renderRestaurants() {
     const searchTerm = searchInput.value.trim().toLowerCase();
+    const selectedCuisine = cuisineFilter.value;
     const selectedCategory = categoryFilter.value;
     const selectedLocation = locationFilter.value;
     const showOnlyFavourites = favouritesFilter.checked;
@@ -170,10 +180,11 @@ async function setupRestaurantDirectory(resultsContainer) {
     const matchingRestaurants = restaurants.filter((restaurant) => {
       const searchableText = `${restaurant.name} ${restaurant.category} ${restaurant.city} ${restaurant.address}`.toLowerCase();
       const matchesSearch = searchableText.includes(searchTerm);
+      const matchesCuisine = !selectedCuisine || restaurant.cuisine === selectedCuisine;
       const matchesCategory = !selectedCategory || restaurant.category === selectedCategory;
       const matchesLocation = !selectedLocation || restaurant.city === selectedLocation;
       const matchesFavourites = !showOnlyFavourites || favouriteIds.includes(restaurant.id);
-      return matchesSearch && matchesCategory && matchesLocation && matchesFavourites;
+      return matchesSearch && matchesCuisine && matchesCategory && matchesLocation && matchesFavourites;
     });
 
     // Keep the user's location in memory only, and sort a copy of the matching list.
@@ -190,9 +201,7 @@ async function setupRestaurantDirectory(resultsContainer) {
     if (displayedRestaurants.length === 0) {
       const emptyMessage = document.createElement('p');
       emptyMessage.className = 'status-message';
-      emptyMessage.textContent = isNearMeActive
-        ? 'No restaurants found near you.'
-        : 'No restaurants found. Try another search or change your filters.';
+      emptyMessage.textContent = 'No restaurants found. Try another search.';
       resultsContainer.append(emptyMessage);
       resultsCount.textContent = '0 places';
       return;

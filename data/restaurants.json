@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Gold Restaurant",
+    "cuisine": "African",
     "category": "African Food",
     "address": "15 Bennett Street, De Waterkant, Cape Town, 8005",
     "city": "Cape Town",
@@ -14,6 +15,7 @@
   {
     "id": 2,
     "name": "The Pot Luck Club",
+    "cuisine": "African",
     "category": "African Food",
     "address": "373-375 Albert Road, Woodstock, Cape Town, 7915",
     "city": "Cape Town",
@@ -26,6 +28,7 @@
   {
     "id": 3,
     "name": "Ocean Basket",
+    "cuisine": "Seafood",
     "category": "Seafood",
     "address": "Main Road, Cape Town, 8005",
     "city": "Cape Town",
@@ -38,6 +41,7 @@
   {
     "id": 4,
     "name": "Col'Cacchio",
+    "cuisine": "Italian",
     "category": "Pizza",
     "address": "Shop 20, Belvedere Road, Wyndover, Claremont, Cape Town, 7708",
     "city": "Cape Town",
@@ -50,6 +54,7 @@
   {
     "id": 5,
     "name": "Marble",
+    "cuisine": "Other",
     "category": "Steakhouse",
     "address": "Jellicoe Avenue, Parktown North, Johannesburg, 2006",
     "city": "Johannesburg",
@@ -62,6 +67,7 @@
   {
     "id": 6,
     "name": "The Grillhouse Melrose Arch",
+    "cuisine": "Other",
     "category": "Steakhouse",
     "address": "38 Whiteley Road, Melrose Arch, Johannesburg, 2076",
     "city": "Johannesburg",
@@ -74,6 +80,7 @@
   {
     "id": 7,
     "name": "Cargo Hold",
+    "cuisine": "Seafood",
     "category": "Seafood",
     "address": "Durban Promenade, Point, Durban, 4069",
     "city": "Durban",
@@ -86,6 +93,7 @@
   {
     "id": 8,
     "name": "Kauai",
+    "cuisine": "Other",
     "category": "Healthy Food",
     "address": "Florida Road, Durban, 4025",
     "city": "Durban",
@@ -98,6 +106,7 @@
   {
     "id": 9,
     "name": "Ginger",
+    "cuisine": "Seafood",
     "category": "Seafood",
     "address": "Marine Drive, Summerstrand, Gqeberha, 6001",
     "city": "Gqeberha",
@@ -110,6 +119,7 @@
   {
     "id": 10,
     "name": "Something Good Roadhouse",
+    "cuisine": "Fast Food",
     "category": "Fast Food",
     "address": "Marine Drive, Summerstrand, Gqeberha, 6001",
     "city": "Gqeberha",
@@ -118,5 +128,38 @@
     "description": "A long-running beachfront roadhouse known for burgers and casual meals.",
     "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80",
     "mapLink": "https://www.google.com/maps/search/?api=1&query=-33.9847125%2C25.6706159"
+  },
+  {
+    "id": 11,
+    "name": "Thali Restaurant",
+    "cuisine": "Indian",
+    "category": "Indian Food",
+    "address": "3B Park Road, Gardens, Cape Town, 8001",
+    "city": "Cape Town",
+    "description": "Indian-inspired small plates, curries, and thalis in a relaxed dining room.",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Thali+Restaurant+3B+Park+Road+Gardens+Cape+Town"
+  },
+  {
+    "id": 12,
+    "name": "Haidilao Hot Pot",
+    "cuisine": "Chinese",
+    "category": "Chinese Food",
+    "address": "Mall of Africa, Magwa Crescent, Midrand, 1686",
+    "city": "Johannesburg",
+    "description": "Chinese hot pot with shared broths and customizable ingredients.",
+    "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Haidilao+Hot+Pot+Mall+of+Africa+Midrand"
+  },
+  {
+    "id": 13,
+    "name": "El Burro Taqueria",
+    "cuisine": "Mexican",
+    "category": "Mexican Food",
+    "address": "81 Main Road, Green Point, Cape Town, 8005",
+    "city": "Cape Town",
+    "description": "Mexican-inspired tacos, tostadas, and shareable plates.",
+    "image": "https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=900&q=80",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=El+Burro+Taqueria+81+Main+Road+Green+Point+Cape+Town"
   }
 ]
